@@ -1,0 +1,198 @@
+ion-header ion-icon {
+  font-size: 18px;
+}
+
+ion-toolbar .tabs {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #4fa1eb;
+  .tab {
+    text-align: center;
+    width: calc(100% / 3);
+    color: #8290e0;
+    &.active {
+      color: #c2cbfc;
+    }
+    ion-icon {
+      font-size: 30px;
+    }
+    .label {
+      font-size: 10px;
+      margin-top: -2px;
+    }
+  }
+}
+
+ion-card {
+  width: 100%;
+}
+
+.header-section {
+  height: 8%;
+}
+
+.top-button-section {
+  height: 8%;
+}
+
+.round-progress-section {
+  height: 15%;
+}
+
+.line-progress-section {
+  height: 25%;
+  margin: 30px auto;
+}
+
+.label-section {
+  height: 25%;
+}
+
+.circle {
+  position: absolute;              
+  left: 50%;                         
+  transform: translate(-50%, 0);
+}
+
+.back {
+  color: white;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 20px;
+}
+
+.title {
+  color: white;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin: 0;
+   position: absolute;              
+   left: 50%;                         
+   transform: translate(-50%, -100%);
+}
+
+.top-buttons {
+  --border-radius: 0px;
+  --box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+  --background: linear-gradient(#0a264a, #144677);
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --height: 30px;
+}
+
+.left-button {
+  --ion-grid-column-padding:20px 15px 20px 30px;
+}
+
+.right-button {
+  --ion-grid-column-padding:20px 30px 20px 15px;
+}
+
+.round-progress {
+  height: 100px;
+  width: 20%;
+  padding: 0px;
+  margin: auto;
+}
+
+.line-progress {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: -10px;
+  height: 8px;
+  background-color: white;
+  border: 5px #0a264a solid;
+  border-radius: 15px;
+  padding:2px 0px 2px 2px;
+}
+
+.bg-progress {
+  width: 80%;
+  height: 100%;
+  background-color: #0a264a;
+  border-radius: 10px;
+  float: left;
+}
+
+.progress-value {
+  margin: -2px 2%;
+  width: 16%;
+  text-align: center;
+  float: left;
+  color: green;
+  font-size: 12px;
+}
+
+.in-progress {
+  width: 60%;
+  height: 100%;
+  background-color: #dab771;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.progress-label {
+  width: 40%;
+  margin: auto;
+  margin-top: -15px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+}
+
+.bottom-item {
+  background-color: #0a264a;
+  text-align: center;
+  margin: 0px;
+  margin-top: 1px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 13px;
+}
+
+.percentage {
+  color: #dab771;
+  height: 20px;
+  padding-top: 8px;
+}
+
+.bottom-label {
+  height: 22px;
+  color: white;
+}
+
+.bottom-left-column {
+  padding: 0px 13px 0 20px;
+}
+
+.bottom-right-column {
+  padding: 0px 20px 0 13px;
+}
+
+.toolbar-tab {
+  --border-style: none;
+  padding: 0px;
+}
+
+.label {
+  font-size: 15px !important;
+}
+
+.animated-gradient {
+  background: repeating-linear-gradient(to right, orange 0%, white 50%, orange 100%);
+  width: 100%;
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: gradient 2s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  height: 2px;
+}
+
+@keyframes gradient { 
+  0%   { background-position: 0 0; }
+  100% { background-position: -200% 0; }
+}

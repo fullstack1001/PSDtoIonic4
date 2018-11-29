@@ -1,0 +1,128 @@
+<ion-content padding class="bg-image">
+
+    <!-- header title -->
+    <div class="header-section">
+        <ion-row>
+            <ion-col>
+                <ion-icon name="arrow-back" class="back"></ion-icon>
+                <ion-label class="title">CAREER</ion-label>
+            </ion-col>
+        </ion-row>
+    </div>
+
+    <!-- Complete code here -->
+
+    <div class="rg-main">
+        <div class="rg-tabs">
+            <a class="active bb">Ring Games</a>
+            <a class=" bb">SNG</a>
+            <a class=" bb">MTT</a>
+        </div>
+        <div class="rg-filtr1 bluebg91">
+            <ion-label class="ionlable">Unamed Table</ion-label>
+
+            <div class="rg-filtr1-radio">
+                <input type="radio" name="filter1" id="f11">
+                <label for="f11"><b>2</b> <img src="assets/img/user.png" alt="user"></label>
+                <input type="radio" name="filter1" id="f12" checked>
+                <label for="f12"><b>6</b> <img src="assets/img/user.png" alt="user"></label>
+                <input type="radio" name="filter1" id="f13">
+                <label for="f13"><b>9</b> <img src="assets/img/user.png" alt="user"></label>
+            </div>
+        </div>
+        <div class="rg-filtr2 bluebg91">
+            <ion-label class="ionlable">Action Time</ion-label>
+
+
+            <div class="rg-filtr2-radio">
+                <input type="radio" name="filter2" id="f21" checked>
+                <label for="f21">&nbsp;</label>
+                <input type="radio" name="filter2" id="f22">
+                <label for="f22">&nbsp;</label>
+                <input type="radio" name="filter2" id="f23">
+                <label for="f23">&nbsp;</label>
+            </div>
+        </div>
+
+        <div class="rg-filtr3 bluebg">
+            <div class="rg-filtr3-range">
+                <ion-label class="ionlable">Blinds: 1/2</ion-label>
+                <div class="ranger"><input type="range" min="1" max="100" value="50"></div>
+            </div>
+            <div class="rg-filtr3-range margin">
+                <label class="ionlable">Buy-in: 40</label>
+                <div class="ranger"><input type="range" min="1" max="100" value="50"></div>
+            </div>
+        </div>
+
+
+
+        <div class="rg-filtr4 bluebg">
+            <ion-label class="ionlable">Auto Start</ion-label>
+
+            <div class="rg-filtr4-radios">
+                <input type="radio" name="filter4" id="f41" checked>
+                <label for="f41"><span>&nbsp;</span> <b>2</b> <img src="assets/img/user2.png" alt="user2"></label>
+                <input type="radio" name="filter4" id="f42">
+                <label for="f42"><span>&nbsp;</span> <b>2</b> <img src="assets/img/user2.png" alt="user2"></label>
+                <input type="radio" name="filter4" id="f43">
+                <label for="f43"><span>&nbsp;</span> <b>2</b> <img src="assets/img/user2.png" alt="user2"></label>
+                <input type="radio" name="filter4" id="f44">
+                <label for="f44"><span>&nbsp;</span> <b>2</b> <img src="assets/img/user2.png" alt="user2"></label>
+            </div>
+        </div>
+        <div class="rg-filtr5 bluebg">
+            <ion-label class="ionlable">Risk Management</ion-label>
+
+            <div class="rg-filtr5-radios">
+                <input type="radio" name="filter5" id="f51" checked>
+                <label for="f51"><span>&nbsp;</span> <b>Multi-Times</b></label>
+                <input type="radio" name="filter5" id="f52">
+                <label for="f52"><span>&nbsp;</span> <b>Interest</b></label>
+            </div>
+        </div>
+        <div class="rg-filtr6 bluebg91">
+            <div><label>Fee :</label> <select>
+          <option>5%</option>
+        </select></div>
+            <div><label>Cap :</label> <select>
+          <option>2BB</option>
+        </select></div>
+        </div>
+        <div class="rg-filtr7 bluebg">
+            <div><span>Authorized to Buy-in</span><input type="checkbox" id="check71" checked> <label for="check71">&nbsp;</label></div>
+            <div><span>GPS Restriction</span><input type="checkbox" id="check72"> <label for="check72">&nbsp;</label></div>
+        </div>
+    </div>
+
+
+</ion-content>
+
+<!-- footer tabs -->
+<ion-footer>
+    <div class="animated-gradient"></div>
+    <ion-toolbar color="success" class="toolbar-tab">
+        <div class="tabs">
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="cart"></ion-icon>
+                <div class="label">shop</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="people"></ion-icon>
+                <div class="label">social</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="heart"></ion-icon>
+                <div class="label">Career</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="briefcase"></ion-icon>
+                <div class="label">Career</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="contact"></ion-icon>
+                <div class="label">Profile</div>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-footer>

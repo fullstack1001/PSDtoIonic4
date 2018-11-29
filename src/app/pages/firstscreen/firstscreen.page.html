@@ -1,0 +1,125 @@
+<ion-content padding class="bg-image">
+
+    <!-- header title -->
+    <div class="header-section">
+        <ion-row>
+            <ion-col>
+                <ion-icon name="arrow-back" class="back"></ion-icon>
+                <ion-label class="title"></ion-label>
+            </ion-col>
+        </ion-row>
+    </div>
+    <!-- Counter Popup -->
+    <section>
+        <div class="av-main">
+            <div class="av-head">
+                <ion-row>
+                    <ion-col class="ioncenter"> <strong>COUNTER</strong></ion-col>
+
+                    <ion-col><span class="av-close">  <ion-icon name="close" class="closewhite" ></ion-icon></span></ion-col>
+                </ion-row>
+
+
+            </div>
+            <div class="av-tabs">
+                <a href="#" class="active">TRADE</a>
+                <a href="#" class="">SEND VIP</a>
+                <a href="#">RECORD</a>
+            </div>
+            <div>
+                <ion-row class="av-text1">
+                    <ion-col class="avcol1"><span>P</span> <b>25.14</b> <span>+</span></ion-col>
+                    <ion-col class="av-textalign"><span>8,991</span></ion-col>
+                </ion-row>
+
+
+            </div>
+            <div class="av-search">
+                <img src="assets/img/search.png" alt="search">
+                <ion-input class="bb" type="text" placeholder="SEARCH MEMBER"></ion-input>
+            </div>
+            <div>
+                <ion-row class="av-text2">
+                    <ion-col>
+                        <div>MEMBER : 198</div>
+                    </ion-col>
+                    <ion-col class="av-textalign"><span>TIME JOINED</span></ion-col>
+                </ion-row>
+            </div>
+            <div class="av-list">
+
+
+                <div class="av-listbox bluebg91">
+                    <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="user" width="80" height="80">
+                    <div class="av-listbox-text"><span>JON DIRKS</span><br>ID:123456<br>Nickname : DIRK</div>
+
+                    <div class="av-listinp">
+                        <label>0</label><span>P</span>
+                    </div>
+                    <div class="av-lcheckbox">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">&nbsp;</label>
+                    </div>
+                </div>
+                <div class="av-listbox bluebg91">
+                    <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="user" width="80" height="80">
+                    <div class="av-listbox-text"><span>1BOB </span><br>ID:739567<br>Nickname : BB$$</div>
+
+                    <div class="av-listinp">
+                        <label>599</label><span>P</span>
+                    </div>
+                    <div class="av-lcheckbox">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">&nbsp;</label>
+                    </div>
+                </div>
+                <div class="av-listbox bluebg91">
+                    <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="user" width="80" height="80">
+                    <div class="av-listbox-text"><span>PP74859</span><br>ID:66543<br>Nickname : WAF</div>
+
+                    <div class="av-listinp">
+                        <label>249</label><span>P</span>
+                    </div>
+                    <div class="av-lcheckbox">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">&nbsp;</label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="av-buttons">
+                <button type="button" class="btnbg">SEND OUT</button>
+                <button type="button" class="btnbg">CLAIM BLACK</button>
+            </div>
+        </div>
+    </section>
+</ion-content>
+<!-- footer tabs -->
+<ion-footer>
+    <div class="animated-gradient"></div>
+    <ion-toolbar color="success" class="toolbar-tab">
+        <div class="tabs">
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="cart"></ion-icon>
+                <div class="label">shop</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="people"></ion-icon>
+                <div class="label">social</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="heart"></ion-icon>
+                <div class="label">Career</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="briefcase"></ion-icon>
+                <div class="label">Career</div>
+            </div>
+            <div class="tab" [ngClass]="{ 'active' : segment === 'shop' }" (click)="onTabSelected('shop')">
+                <ion-icon name="contact"></ion-icon>
+                <div class="label">Profile</div>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-footer>

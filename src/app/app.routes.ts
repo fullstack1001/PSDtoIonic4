@@ -1,3 +1,5 @@
 export const AppRoutes = [
-  { path: '', loadChildren: './pages/home/home.module#HomePageModule' }
+ // { path: '', loadChildren: './pages/ringgames/ringgames.module#ringgamesPageModule' }
+ { path: '', loadChildren: './pages/firstscreen/firstscreen.module#firstscreenPageModule' }
+
 ];
